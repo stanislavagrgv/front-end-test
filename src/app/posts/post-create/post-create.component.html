@@ -1,0 +1,19 @@
+<h2>The post-create component</h2>
+<!--<textarea rows="6" [value]="'Test'" #postInput></textarea>-->
+<mat-card>
+    <mat-form-field>
+        <input matInput type="text" [(ngModel)]="enteredTitle">
+      </mat-form-field>
+      <mat-form-field>
+          <textarea matInput rows="6" [(ngModel)]="enteredContent"></textarea>
+        </mat-form-field>
+<!-- <mat-form-field>
+  <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+</mat-form-field> -->
+<!--<button (click)="onSavePost(postInput)">Save post</button>-->
+<button
+color="primary"
+mat-raised-button
+(click)="onSavePost()">Save post</button>
+</mat-card>
+<!--<p>{{ newPost }}</p>-->
